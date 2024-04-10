@@ -94,8 +94,10 @@ body {
 }
 
 .answer {
-    display: none;
-    padding-top: 1em;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity .5s;
     color: var(--tertiary-color);
     font-size: 15px;
     font-weight: 400;
@@ -103,7 +105,9 @@ body {
 }
 
 .toggle.active .answer {
-    display: block;
+    height: 100%;
+    opacity: 1;
+    padding-top: 1em;
 }
 
 @media (min-width: 1000px) {
