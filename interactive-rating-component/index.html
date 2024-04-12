@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+  <title>Interactive rating component</title>
+</head>
+<body>
+  <main class="container">
+    <section class="rating-state" id="rating-state">
+      <div class="star-icon">
+        <img  src="assets/images/icon-star.svg" alt="icon star">
+      </div>
+      <div class="text">
+        <h2 class="title">How did we do?</h2>
+        <p class="paragraph">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      </div>
+
+      <div class="rating-container" id="rating-container">
+        <button class="rating-number">1</button>
+        <button class="rating-number">2</button>
+        <button class="rating-number">3</button>
+        <button class="rating-number">4</button>
+        <button class="rating-number">5</button>
+      </div>
+
+      <button id="submit-rating" class="submit-button">Submit</button>
+    </section>
+
+    <section class="thank-state" id="thank-state">
+      <img class="thank-state-img" src="assets/images/illustration-thank-you.svg" alt="">
+      <span class="selected-rating">You selected <span id="selected-rating"></span> out of 5</span>
+      <div class="text">
+        <h2 class="title">Thank you!</h2>
+        <p class="paragraph">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
