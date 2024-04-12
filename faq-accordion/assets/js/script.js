@@ -1,9 +1,13 @@
 document.querySelectorAll(".toggle").forEach((toggle) => {
-  toggle.addEventListener("click", () => {
-    if (toggle.classList.contains("active")) {
-      toggle.classList.remove("active");
+  toggle.addEventListener("click", function() {
+    
+    if (this.classList.contains("active")) {
+      this.classList.remove("active");
     } else {
-      toggle.classList.add("active");
+      document.querySelectorAll(".toggle").forEach((t) => {
+        t.classList.remove("active");
+      });
+      this.classList.add("active");
     }
   });
 });
