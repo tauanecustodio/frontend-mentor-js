@@ -25,15 +25,20 @@
         <p class="paragraph">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
       </div>
 
-      <div class="rating-container" id="rating-container">
-        <button class="rating-number">1</button>
-        <button class="rating-number">2</button>
-        <button class="rating-number">3</button>
-        <button class="rating-number">4</button>
-        <button class="rating-number">5</button>
-      </div>
+      <form action="#" class="rating-container" id="rating-container">
+        <input type="radio" name="stars" value="1" id="star1">
+        <label for="star1" class="rating-number">1</label>
+        <input type="radio" name="stars" value="2" id="star2">
+        <label for="star2" class="rating-number">2</label>
+        <input type="radio" name="stars" value="3" id="star3">
+        <label for="star3" class="rating-number">3</label>
+        <input type="radio" name="stars" value="4" id="star4">
+        <label for="star4" class="rating-number">4</label>
+        <input type="radio" name="stars" value="5" id="star5">
+        <label for="star5" class="rating-number">5</label>
+      </form>
 
-      <button id="submit-rating" class="submit-button">Submit</button>
+      <button class="submit-button" type="submit">Submit</button>
     </section>
 
     <section class="thank-state" id="thank-state">

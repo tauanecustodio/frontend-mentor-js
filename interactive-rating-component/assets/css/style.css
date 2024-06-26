@@ -65,6 +65,10 @@ body {
     justify-content: space-between;
 }
 
+input[name="stars"] {
+    display: none;
+}
+
 .rating-number {
     width: 40px;
     height: 40px;
@@ -80,8 +84,7 @@ body {
     justify-content: center;
 }
 .rating-container.not-selected .rating-number {
-    animation: border-not-selected 1s;
-    animation-iteration-count: 3;
+    animation: border-not-selected 1s infinite;
 }
 
 @keyframes border-not-selected {
@@ -98,7 +101,7 @@ body {
     background-color: var(--primary-color);
 }
 
-.rating-number.selected {
+input[type="radio"]:checked + label {
     color: var(--secondary-color);
     background-color: var(--senary-color);
 }
@@ -138,10 +141,6 @@ body {
     background: var(--quaternary-color);
     border-radius: 3em;
     padding: 0.5em 1.3em;
-}
-
-@media (min-width: 600px) {
-
 }
 
 @media (min-width: 600px) {
